@@ -26,6 +26,5 @@ def valid_phone_number?(phone)
       i+=1
   end 
   
-  !!(text =~ /[aeiou]/i)
-  
+  !!(text =~ /\A\d{8}\z/) 
 end
