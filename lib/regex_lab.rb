@@ -26,6 +26,6 @@ def valid_phone_number?(phone)
       i+=1
   end 
   
-  text = 
+!!(text =~ //)
   
 end
