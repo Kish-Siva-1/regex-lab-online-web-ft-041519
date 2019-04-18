@@ -13,7 +13,7 @@ end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
   
-  text.scan(/^[A-Z].*\W$/)
+  !!(text =~ /^[A-Z].*\W$/)
 
 end
 
