@@ -16,5 +16,16 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
+
+  text=[]
+  i = 0 
+
+  phone.collect do |number|
+      text[i]=number.delete('^0-9')
+      puts text[i]
+      i+=1
+  end 
+  
+  text = 
   
 end
