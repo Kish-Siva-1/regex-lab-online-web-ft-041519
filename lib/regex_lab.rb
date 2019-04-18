@@ -17,14 +17,6 @@ end
 
 def valid_phone_number?(phone)
 
-  text=[]
-  i = 0 
+  !!(phone =~ /\A\d{8}\z/) 
 
-  phone.collect do |number|
-      text[i]=number.delete('^0-9')
-      puts text[i]
-      i+=1
-  end 
-  
-  text =~ /\A\d{8}\z/) 
 end
