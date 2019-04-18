@@ -17,6 +17,6 @@ end
 
 def valid_phone_number?(phone)
 
-  !!(phone =~ /\A\d{8}\z/) 
+  !!(phone =~ /\A\d{10}\z/) 
 
 end
