@@ -17,6 +17,7 @@ end
 
 def valid_phone_number?(phone)
 
-  !!(phone =~ /\A\d{10}\z/) 
+  number = phone.delete('^0-9')
+  !!(number =~ /\A\d{10}\z/) 
 
 end
