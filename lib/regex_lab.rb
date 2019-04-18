@@ -4,11 +4,11 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   text2 = text.split(" ")
-  text2.grep(/\w+[un]*[ing]/)
+  text2.grep(/\w+[un]{2}*[ing]{3}/)
 end
 
 def words_five_letters_long(text)
-
+  
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
